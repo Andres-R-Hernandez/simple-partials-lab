@@ -1,5 +1,6 @@
 class StudentsController < ApplicationController
   def new
+    render :layout => "students"
     @student = Student.new
   end
 
@@ -13,6 +14,7 @@ class StudentsController < ApplicationController
   end
 
   def edit
+    render :layout => "students"
     @student = Student.find(params[:id])
   end
 
